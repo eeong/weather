@@ -5,13 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weather</title>
-	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../css/index.css">
+
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/moment.min.js"></script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -42,9 +45,10 @@
 
 				</div></div>
 				<div class="loc-wrapper">
+					<div class="bt-position">현재위치 날씨보기</div>
 					<h2 class="title"> 
 						<span class="title-loc"></span>
-						<small>-<span class="title-date"></span><span class="title-time"></span></small>
+						<small><span class="title-date"></span> <span class="title-time"></span></small>
 					</h2>
 					<div class="cont-wrapper">
 						<div class="daily-weather">
@@ -52,34 +56,30 @@
 								<img>
 							</div>
 							<div class="cont-wrap">
-								<h3 class="temp-wrap">온도:<span class="temp"></span>℃ /<small> 체감온도: <span class="temp-feels"></span>℃</small></h3>
-								<h3 class="desc-wrap"><span class="desc-title"></span>/<span class="desc"></span></h3>
-								<h3 class="humid-wrap"> 기압:<span class="press"></span>mmHg 습도:<span class="humid"></span>% 바람: <span class="wind-direction"></span>( <span class="wind-speed"></span>m/s )</h3>
+								<h3 class="temp-wrap">온도:<span class="temp"> </span>℃ / <small> 체감온도: <span class="temp-feels"> </span>℃</small></h3>
+								<h3 class="desc-wrap"><span class="desc-title"> </span> / <span class="desc"></span></h3>
+								<h3 class="humid-wrap"> 기압: <span class="press"> </span> | mmHg 습도: <span class="humid"></span> | % 바람: <span class="wind-direction"></span>( <span class="wind-speed"></span>m/s )</h3>
+								<div class="misc-wrap">
+									일출: <span class="sunrise"></span>
+								 /	일몰: <span class="sunset"></span>
+								</div>
 							</div>
 						</div>
-						<div class="misc-wrap">
-							일출: <span class="sunrise"></span>
-						 /	일몰: <span class="sunset"></span>
+						
+						<div class="weekly-weather swiper-container">
+								<div class="slide-wrapper swiper-wrapper">
+									
+								</div>
+								<div class="bt-prev bt-angle">〈</div>
+								<div class="bt-next bt-angle">〉</div>
+								<div class="swiper-pagination"></div>
 							</div>
-						<div class="weekly-weather">
-
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		<!-- //.main -->
-		<!-- daily -->
-		<div class="daily-wrapper wrap">
-			
-		</div>
-		<!-- //.daily -->
-		<!-- weekly -->
-		<div class="weekly-wrapper wrap">
-			
-		</div>
-		<!-- //.weekly -->
-		
+				
 	</div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81847498407d020eeeecb5cf3ec823a8"></script>
 	<script src="../js/index.js"></script>
