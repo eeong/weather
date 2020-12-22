@@ -25,7 +25,7 @@ html,body{font-size: 16px;  background: url(../img/background-fall.png) no-repea
 .main-wrapper .now-wrapper .map-wrapper #map{width: 100%; height: calc(100% - 54px); }
 
 .info-window{display: flex;  background:#66da9a; align-items: center; font-size: 0.75rem; line-height: 1.1; border: 1px solid #000; border-radius: 6px; transform: translate(0, -30px); position: relative; cursor: pointer;}
-.info-window.active{background-color: #2ebe6f;}
+.info-window.active{background-color: #26c06c;}
 .info-window.lt {transform:translate(40%,-36px);}
 .info-window.lt .img-arrow{transform:translateX(-150%);}
 .info-window.rt {transform:translate(-40%,-36px);}

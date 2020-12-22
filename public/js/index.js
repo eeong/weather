@@ -1,5 +1,5 @@
 /*********** Global *************/
-var appid = 'd905c12b72e24ba0ea5f7746a96c3d73'
+var appid = 'd905c12b72e24ba0ea5f7746a96c3d73';
 var kakaokey = "81847498407d020eeeecb5cf3ec823a8";
 var dailyURL = 'https://api.openweathermap.org/data/2.5/weather';
 var weeklyURL = 'https://api.openweathermap.org/data/2.5/forecast';
@@ -45,7 +45,7 @@ function onGetCity(r){
 			sendData.id = null;
 			sendData.lat = v.lat;
 			sendData.lon = v.lon;
-			$.get(dailyURL, sendData, function(res){onGetDaily(res, v.class)});
+			$.get(dailyURL, sendData, function(res){onGetDaily(res, v.class);});
 			$("#city").append("<option value='"+v.id+"'>" + v.name + "</option>");
 		});
 	}
@@ -141,7 +141,6 @@ function onGetDailyWeather(r){
 }
 
 function onGetWeeklyWeather(r){
-	console.log(r)
 	$(".weekly-weather .slide-wrapper").empty();
 	for(var i in r.list) {
 		v = r.list[i];
