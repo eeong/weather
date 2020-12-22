@@ -1,8 +1,8 @@
 /*********** Global *************/
 var appid = 'd905c12b72e24ba0ea5f7746a96c3d73'
 var kakaokey = "81847498407d020eeeecb5cf3ec823a8";
-var dailyURL = 'http://api.openweathermap.org/data/2.5/weather';
-var weeklyURL = 'http://api.openweathermap.org/data/2.5/forecast';
+var dailyURL = 'https://api.openweathermap.org/data/2.5/weather';
+var weeklyURL = 'https://api.openweathermap.org/data/2.5/forecast';
 var cls;
 
 var sendData = {
