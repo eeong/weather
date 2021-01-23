@@ -16,3 +16,6 @@ GoogleService-Info.plist
 
 # Local History for Visual Studio Code
 .history/
+
+# Old version files
+.old
