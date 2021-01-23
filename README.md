@@ -1,6 +1,6 @@
 # KakaoMap을 활용한 인터렉티브 날씨 정보 어플리케이션
 
-### [링크](https://eeong-weather.web.app){:target="_blank"}
+### [링크](https://eeong-weather.web.app)
 
 ## 스택
 
